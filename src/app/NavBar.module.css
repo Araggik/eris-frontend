@@ -1,0 +1,9 @@
+.navigation {
+  background-color: bisque;
+  width: 5rem;
+}
+
+.navigation__list {
+  display: flex;
+  flex-direction: column;
+}
