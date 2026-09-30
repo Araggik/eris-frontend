@@ -19,8 +19,7 @@ export function NavBar() {
       <ul className={styles["navigation__list"]}>
         {btns.map((el) => (
           <li key={el.path}>
-            {/* ТODO: разобраться с ошибкой */}
-            <Link to="/login">
+            <Link to={el.path}>
               <span className="material-symbols-outlined">{el.icon}</span>
             </Link>
           </li>

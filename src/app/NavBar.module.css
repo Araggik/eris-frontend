@@ -1,9 +1,15 @@
 .navigation {
-  background-color: bisque;
+  background-color: rgb(245, 240, 240);
   width: 5rem;
 }
 
 .navigation__list {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.navigation__item {
+  width: 100%;
+  height: 4rem;
 }

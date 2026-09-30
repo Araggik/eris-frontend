@@ -1,0 +1,13 @@
+.body {
+  --Border-Radius-BRXS: 0.25rem;
+  --Border-Radius-BRS: 0.5rem;
+  --Border-Radius-BRM: 0.75rem;
+  --Border-Radius-BRL: 1rem;
+  --Border-Radius-BRXL: 1rem;
+}
+
+.body--light {
+}
+
+.body--dark {
+}
