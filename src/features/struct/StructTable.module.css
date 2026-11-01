@@ -1,0 +1,61 @@
+.table {
+  padding: 1rem;
+}
+
+.table__title {
+  margin: 0 0 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface, rgb(25 28 32));
+}
+
+.table__grid {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+  color: var(--md-sys-color-on-surface, rgb(25 28 32));
+}
+
+.table__grid th,
+.table__grid td {
+  padding: 0.625rem 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--md-sys-color-outline-variant, rgb(195 199 207));
+}
+
+.table__grid th {
+  font-weight: 600;
+  color: var(--md-sys-color-on-surface-variant, rgb(67 71 78));
+}
+
+.table__num {
+  text-align: right;
+}
+
+.table__state {
+  padding: 2.5rem 0;
+  text-align: center;
+  color: var(--md-sys-color-on-surface-variant, rgb(67 71 78));
+}
+
+.chip {
+  display: inline-block;
+  padding: 0.125rem 0.625rem;
+  border-radius: 999px;
+  font-size: 0.8125rem;
+}
+
+.chip--active {
+  background-color: var(--md-sys-color-primary-container, rgb(209 228 255));
+  color: var(--md-sys-color-on-primary-container, rgb(25 73 117));
+}
+
+.chip--draft {
+  background-color: var(--md-sys-color-tertiary-container, rgb(242 218 255));
+  color: var(--md-sys-color-on-tertiary-container, rgb(82 63 95));
+}
+
+.chip--archived {
+  background-color: var(--md-sys-color-surface-container-highest, rgb(225 226 232));
+  color: var(--md-sys-color-on-surface-variant, rgb(67 71 78));
+}

@@ -1,0 +1,6 @@
+.struct {
+  flex: 1;
+  height: 100vh;
+  min-width: 0;
+  background-color: var(--md-sys-color-surface, rgb(248 249 255));
+}
