@@ -1,20 +1,11 @@
-import { createBrowserRouter, Outlet } from "react-router";
 import { RouterProvider } from "react-router/dom";
 
-import { NavBar } from "./NavBar";
+import { Outlet } from "react-router";
 
-import { Home, Struct } from "~/pages/index";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Layout />,
-    children: [
-      { index: true, element: <Home /> },
-      { path: "struct", element: <Struct /> },
-    ],
-  },
-]);
+import { createRouter } from "./routes/index";
+//Подключение глобальных стилей к проекту
+import "./styles/index";
+import { NavBar } from "./ui/index";
 
 function Layout() {
   return (
@@ -26,5 +17,7 @@ function Layout() {
 }
 
 export default function App() {
-  return <RouterProvider router={router}></RouterProvider>;
+  return (
+    <RouterProvider router={createRouter(<Layout></Layout>)}></RouterProvider>
+  );
 }
